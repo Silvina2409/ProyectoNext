@@ -9,7 +9,7 @@ const Nosotros = () => {
   return (
     <>
   
-    <div className=' m-auto bg-yellow-50'>
+    <div className=' m-auto container'>
         <h1 className='text-4-xl text-black text-3xl my-4 ml-4'>Nosotros </h1>
         <hr/>
         <p  className='text-base mt-5 ml-10'> Somos una empresa dedicada al diseño y fabricación de mobiliario funcional con proósito, desarrollamos productos pensados para personas en distintas etapas y con diferentes estilos de vida. Nuestra filosofia se basa en cubrir todos los detalles para mejorar la calidad en los espacios del ser humano  </p>
@@ -17,7 +17,7 @@ const Nosotros = () => {
         <p  className='text-base mt-4 ml-10'> Contamos con un equipo altamente comprometido, capacitado y profesional que garantiza una excelente atención y asesoría, la eficiencia en todas las operaciones y la calidad de los productos con orientación a la satisfacción de nuestros clientes </p>
         
     </div>
-    <Boton onClick ={() => router.back() } >
+    <Boton className="mx-40 my-20 bg-gray-100 " onClick ={() => router.back() } >
       Volver
     </Boton>
     <Footer/>

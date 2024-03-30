@@ -18,7 +18,7 @@ const Contacto = () => {
             <hr/>
             <p className='text-base mt-4'> Página de Contacto</p>
         </main>
-
+        
         <Footer/>
 
     </>

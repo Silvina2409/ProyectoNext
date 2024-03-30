@@ -1,5 +1,5 @@
 import ProductCard from "./ProductCard"
-import { mockData} from "@/Data/mockDat"
+import { mockData} from "@/data/mockDat"
 
 
 const ProductsList = ({categoria}) => {

@@ -1,7 +1,7 @@
-import { mockData} from "@/Data/mockDat" 
+import { mockData} from "@/data/mockDat" 
 import Image from "next/image";
 import QtySelector from "./QtySelector"
-import GoBack from "../ui/GoBack"
+
 
 const ProductDetail = ({id}) => {
     const item = mockData.find (p => p.id === id)
@@ -18,14 +18,14 @@ const ProductDetail = ({id}) => {
                     />
                 </div>
                 <div className="basis-1/2">
-                    <h3 className="text-2xl font-semibold border-b border-gray-200 pb-4 mb-4"> {item.title} </h3>
-                    <p className="text-4xl">$ {item.price} </p>
+                    <h3 className="text-4xl font-semibold border-b border-gray-200 pb-4 mb-4"> {item.title} </h3>
+                    <p className="text-2xl">$ {item.price} </p>
                     <QtySelector item={item} />
                 </div>    
             </section>
             <section className="mt-12">
-                <h3 className="text-xl font-semibold border-b border-gray-200 pb-4 my-4"> Descripción</h3>
-                <p className="text-gray-600"> {item.description} </p>
+                <h3 className="text-2xl font-semibold border-b border-gray-200 pb-4 my-4"> Descripción</h3>
+                <p className="text-gray-600 text-lg"> {item.description} </p>
             </section>
 
         </div>

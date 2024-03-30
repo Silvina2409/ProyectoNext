@@ -17,8 +17,8 @@ const links = [
   {
     label: "Contacto",
     href: "/contacto"
-  }
-]
+  },
+  ]
 
 
 
