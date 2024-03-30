@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Footer from '../Components/ui/Footer'
+import Footer from '../../Components/ui/Footer'
 
 export const metadata = {
     title: "Nosotros Furniture Tienda",

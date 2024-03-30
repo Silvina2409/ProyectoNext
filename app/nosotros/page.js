@@ -1,13 +1,11 @@
+"use client"
 import React from 'react'
+import { useRouter } from 'next/navigation'
+import Footer from '../../Components/ui/Footer'
+import Boton from '../../Components/ui/Boton'
 
-import Footer from '../Components/ui/Footer'
-
-export const metadata = {
-    title: "Nosotros Furniture Tienda",
-    description: "Esto somos nosotros"
-  
-  }
 const Nosotros = () => {
+  const router = useRouter()
   return (
     <>
   
@@ -19,6 +17,9 @@ const Nosotros = () => {
         <p  className='text-base mt-4 ml-10'> Contamos con un equipo altamente comprometido, capacitado y profesional que garantiza una excelente atención y asesoría, la eficiencia en todas las operaciones y la calidad de los productos con orientación a la satisfacción de nuestros clientes </p>
         
     </div>
+    <Boton onClick ={() => router.back() } >
+      Volver
+    </Boton>
     <Footer/>
     </>
   )
