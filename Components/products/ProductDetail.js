@@ -7,14 +7,14 @@ const ProductDetail = ({id}) => {
     const item = mockData.find (p => p.id === id)
     return (
         <div className="max-w-4xl m-auto">
-            <GoBack className="text-sm text-blue-500 underline mb-6"  />
+           
             <section className="flex gap-6"> 
                 <div className="relative basis-1/2"> 
                     <Image 
                     src={item.image}
                     alt = {item.title}
-                    width={100}
-                    height={100}
+                    width={400}
+                    height={400}
                     />
                 </div>
                 <div className="basis-1/2">
