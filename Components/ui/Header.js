@@ -18,6 +18,14 @@ const links = [
     label: "Contacto",
     href: "/contacto"
   },
+  {
+    label: <Image 
+            src={"/cart.png"} 
+            width={30}
+            height={30}
+            />,
+    href: "/carrito"
+  },
   ]
 
 
@@ -25,7 +33,7 @@ const links = [
 const Header = () => {
   const pathname = usePathname()
   return (
-    <header className='w-full bg-gray-600'>
+    <header className='w-full bg-gray-400'>
         <div className='container m-auto py-6 flex justify-between items-center'>
           <Link href={"/"}>
           <Image
