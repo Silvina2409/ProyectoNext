@@ -1,10 +1,16 @@
-import { mockData} from "@/data/mockDat" 
 import Image from "next/image";
 import QtySelector from "./QtySelector"
 
 
-const ProductDetail = ({id}) => {
-    const item = mockData.find (p => p.id === id)
+const ProductDetail =  async ({description}) => {
+    const item = await fetch(`http://localhost:3000/api/product/${description}`, {
+        cache: 'no-store',
+        next: {
+            revalidate: 0
+        }
+    }).then(res => res.json()) 
+    
+    
     return (
         <div className="max-w-4xl m-auto">
            

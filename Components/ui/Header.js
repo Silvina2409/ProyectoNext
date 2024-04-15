@@ -23,8 +23,13 @@ const links = [
             src={"/cart.png"} 
             width={30}
             height={30}
+            alt={"imagen"}
             />,
     href: "/carrito"
+  },
+  {
+    label: "Posts",
+    href: "/posts"
   },
   ]
 

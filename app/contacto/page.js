@@ -1,5 +1,5 @@
 import React from 'react'
-
+import ContactForm from '@/Components/contacto/ContactForm'
 import Footer from '../../Components/ui/Footer'
 
 export const metadata = {
@@ -16,7 +16,7 @@ const Contacto = () => {
         <main className='container m-auto '>
             <h1 className='text-4xl text-black-600 font-bold my-4'> Contacto </h1>
             <hr/>
-            <p className='text-base mt-4'> Página de Contacto</p>
+            <ContactForm/>
         </main>
         
         <Footer/>
