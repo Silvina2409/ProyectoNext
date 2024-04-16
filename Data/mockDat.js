@@ -33,7 +33,7 @@
         type: "sillas",
         image:  "https://acdn.mitiendanube.com/stores/001/120/603/products/black-211-986a29b4b96306851916578232723781-480-0.webp",
         stock: 15,
-        description: "Medidas aproximadas: Alto hasta el asiento: 0,43cm. Alto hasta el respaldo:  0,73cm.Profundidad: 0,60cm.Frente: 0,60cm.     Tapizada en tela antimanchas. Color a eleccion, sujeto a disponibilidad. "
+        description: "Medidas aproximadas: Alto hasta el asiento: 0,43cm. Alto hasta el respaldo:  0,73cm.Profundidad: 0,60cm.Frente: 0,60cm. Tapizada en tela antimanchas. Color a eleccion, sujeto a disponibilidad. "
     },
     
     {

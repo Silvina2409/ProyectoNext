@@ -4,18 +4,8 @@ import ProductCard from "./ProductCard"
 
 const ProductsList = async ({categoria}) => {
     const items = await fetch(`http://localhost:3000/api/productos/${categoria}`,
-{cache: "force-cache",
- next: {
-    tags: ['productos'] 
- }   
+{cache: "force-cache"}).then (r => r.json())
 
-}).then(r => r.json())
-
-        
-   
-   
-    
-    
     return (
         <section className="container m-auto flex justify-center items-center gap-12 flex-wrap">
             {
