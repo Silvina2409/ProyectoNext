@@ -19,7 +19,7 @@ const links = [
     label: "Contacto",
     href: "/contacto"
   },
- 
+
   {
     label: "Posts",
     href: "/posts"
@@ -54,12 +54,13 @@ const Header = () => {
                 >
                  {link.label}   
                 </Link>
-              } 
+              }
+                 
               )
             }
-          <CartWidget/>
+                <CartWidget/>    
           </nav>
-
+      
         </div>
 
     </header>

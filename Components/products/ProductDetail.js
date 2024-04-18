@@ -2,10 +2,9 @@ import Image from "next/image";
 import QtySelector from "./QtySelector"
 
 
-const ProductDetail =  async ({id}) => {
-    const item = await fetch(`http://localhost:3000/api/product/${id}`, {
-        cache: 'no-store',     
-    }).then(res => res.json()) 
+const ProductDetail =async ({id}) => {
+    const item =  await fetch(`http://localhost:3000/api/product/${id}`, {cache: "no-store"}).then (r => r.json())
+
     
     
     return (
