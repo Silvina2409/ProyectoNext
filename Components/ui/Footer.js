@@ -15,6 +15,7 @@ const Footer = () => {
             alt= "logo de NextJS"
             width={50}
             height= {50}
+            className='w-auto'
             />
         </div>
 

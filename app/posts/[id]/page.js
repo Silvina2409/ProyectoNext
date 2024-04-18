@@ -1,9 +1,6 @@
 const getPostsById = async (id) => {
-    const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
-        next: {
-            revalidate: 0
-        }
-    })
+    const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, 
+  )
     if(!response.ok){
         throw new Error ("fallo")
     }

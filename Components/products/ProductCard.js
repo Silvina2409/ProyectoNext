@@ -13,6 +13,7 @@ const ProductCard = ({item}) => {
                 src={item.image}
                 width={200}
                 height={200}
+                className="w-auto"
             />
             <div className="px-4 border-t items-center">
                 <h3 className="text-xl my-4 "> {item.title} </h3>

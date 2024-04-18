@@ -4,6 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import CartWidget from './CartWidget'
 
 const links = [
   {
@@ -18,15 +19,7 @@ const links = [
     label: "Contacto",
     href: "/contacto"
   },
-  {
-    label: <Image 
-            src={"/cart.png"} 
-            width={30}
-            height={30}
-            alt={"imagen"}
-            />,
-    href: "/carrito"
-  },
+ 
   {
     label: "Posts",
     href: "/posts"
@@ -47,6 +40,7 @@ const Header = () => {
             height={75}
             alt = "logo furniture"
             priority
+            className='m-auto'
           />
           </Link>
           
@@ -60,11 +54,10 @@ const Header = () => {
                 >
                  {link.label}   
                 </Link>
-              }
-                 
+              } 
               )
             }
-
+          <CartWidget/>
           </nav>
 
         </div>
