@@ -18,7 +18,8 @@ const ContactForm = () => {
     }
     const handleSubmit = async (e) => {
         e.preventDefault() 
-        await fetch("http://localhost:3000/aoi/contacto",
+        
+        await fetch("http://localhost:3000/api/contacto",
          {
             method: "POST",
             body: JSON.stringify(values)
@@ -32,8 +33,8 @@ const ContactForm = () => {
              required 
              placeholder='Ingrese su E Mail'
              className='p-2 rounded w-1/2 border border-blue-100 block my-4'
-            name='email' 
-            onChange={handleChange}
+             name='email' 
+             onChange={handleChange}
             />
             <textarea 
               required

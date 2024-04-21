@@ -6,7 +6,7 @@ const links = [
     {label: "Todos", href: "/productos/todos"},
     {label: "Mesas", href: "/productos/mesas"},
     {label: "Sillas", href: "/productos/sillas"},
-    {label: "Sillones", href: "/productos/sillones"}
+    {label: "Sillones", href: "/productos/sillones"},
 ]
 
 const CategoriesMenu = () => {
