@@ -13,9 +13,9 @@ export async function generateMetadata  ({params, searchParams}, parent) {
 export function generateStaticParams () {
     return [
         {categoria: "todos"},
-        {categoria: "sillones"},
+        {categoria: "mesas"},
         {categoria: "sillas"},
-        {categoria: "mesas"}
+        {categoria: "sillones"},
     ]
 }
 export const revalidate = 3600
