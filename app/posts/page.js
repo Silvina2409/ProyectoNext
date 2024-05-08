@@ -28,11 +28,13 @@ const Posts = async () => {
         <ul>
             {
                 posts.map((post) => (
-                    <Link href= {`/posts/${post.id}`}>
                     <li className='my-4 list-disc' key={post.id}>
+                    <Link href= {`/posts/${post.id}`}>
+                    
                         {post.title}
+                     </Link>
                     </li>
-                    </Link>
+                 
                 ))
             }
         </ul>

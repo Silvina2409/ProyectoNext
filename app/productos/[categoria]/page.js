@@ -14,8 +14,9 @@ export function generateStaticParams () {
     return [
         {categoria: "todos"},
         {categoria: "mesas"},
-        {categoria: "sillas"},
         {categoria: "sillones"},
+        {categoria: "sillas"},
+       
     ]
 }
 export const revalidate = 3600
