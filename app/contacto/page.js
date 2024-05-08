@@ -3,8 +3,8 @@ import ContactForm from '@/Components/contacto/ContactForm'
 import Footer from '../../Components/ui/Footer'
 
 export const metadata = {
-    title: "Nosotros Furniture Tienda",
-    description: "Esto somos nosotros"
+    title: "contacto Furniture Tienda",
+    description: "Contacto"
   
   }
 

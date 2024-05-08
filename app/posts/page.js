@@ -1,6 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
 
+export const metadata = {
+    title: "Furniture Tienda",
+    description: "Venta de muebles"
+  
+  }
+  
+
 const getPosts = async () => {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts/",
 
