@@ -1,18 +1,13 @@
 "use client"
 import { createContext, useContext, useEffect, useState } from "react"
-import { auth, provider } from "@/firebase/config"
+import { auth, provider, db } from "@/firebase/config"
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, signInWithPopup } from "firebase/auth"
-
-
 
 
 const AuthContext = createContext()
 
 
 export const useAuthContext = () => useContext(AuthContext)
-
-
-
 
 const registerUser = async (values) => {
     await createUserWithEmailAndPassword(auth, values.email, values.password)
@@ -24,6 +19,8 @@ export const AuthProvider = ({ children }) => {
         email: null,
         uid: null,
     })
+
+
 
     const loginUser = async (values) => {
         await signInWithEmailAndPassword(auth, values.email, values.password)
@@ -42,12 +39,14 @@ export const AuthProvider = ({ children }) => {
         onAuthStateChanged(auth, (user) => {
             console.log(user)
             if (user) {
-                setUser({
-                    logged: true,
-                    email: user.email,
-                    uid: user.uid
-                })
-            } else {
+             
+                    setUser({
+                        logged: true,
+                        email: user.email,
+                        uid: user.uid
+                    })      
+                }   
+             else {
 
                 setUser({
                     logged: false,
